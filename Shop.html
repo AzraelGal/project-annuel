@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - MarketPlace</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">MarketPlace</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher des produits...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Account.html"><i class="fas fa-user"></i> Mon compte</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-heart"></i> Favoris</a>
+                </li>
+                <li>
+                    <a href="Cart.html"><i class="fas fa-shopping-cart"></i> Panier <span class="cart-count">0</span></a>
+                </li>
+                <li>
+                    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-products">
+            <h2>Tous les produits</h2>
+            <div class="product-filters">
+                <div class="filter-group">
+                    <label for="category">Catégorie:</label>
+                    <select id="category">
+            <option value="all">Toutes les catégories</option>
+            <option value="mode">Mode</option>
+            <option value="electronique">Électronique</option>
+            <option value="maison">Maison</option>
+            <option value="occasion">Occasion</option>
+          </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Prix:</label>
+                    <select id="price">
+            <option value="all">Tous les prix</option>
+            <option value="0-50">Moins de $50</option>
+            <option value="50-100">$50 - $100</option>
+            <option value="100-500">$100 - $500</option>
+            <option value="500+">Plus de $500</option>
+          </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort">Trier par:</label>
+                    <select id="sort">
+            <option value="popular">Populaire</option>
+            <option value="newest">Nouveautés</option>
+            <option value="price-low">Prix: croissant</option>
+            <option value="price-high">Prix: décroissant</option>
+          </select>
+                </div>
+            </div>
+            <div class="product-grid" id="product-container">
+                <!-- Les produits seront chargés ici par JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Aide</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">CGU</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 MarketPlace. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script src="Scripts.js"></script>
+</body>
+
+</html>

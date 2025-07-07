@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un compte - MarketPlace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="Index.html" class="logo">
+                <i class="fas fa-store"></i> MarketPlace
+            </a>
+
+            <div class="nav-container">
+                <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+
+                <div class="nav-icons">
+                    <a href="Login.html" class="nav-icon">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>Connexion</span>
+                    </a>
+                    <button id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="page-container">
+            <div class="content-card" style="max-width: 600px; margin: 0 auto;">
+                <h1 class="page-title">Créer un compte</h1>
+
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="user-type">Je suis</label>
+                        <select id="user-type" class="form-control" required>
+              <option value="">Sélectionnez un type</option>
+              <option value="buyer">Acheteur</option>
+              <option value="seller">Vendeur</option>
+            </select>
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label for="first-name">Prénom</label>
+                            <input type="text" id="first-name" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">Nom</label>
+                            <input type="text" id="last-name" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" id="password" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-password">Confirmer le mot de passe</label>
+                            <input type="password" id="confirm-password" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="option">
+              <input type="checkbox" id="terms" required>
+              J'accepte les <a href="terms.html">conditions d'utilisation</a>
+            </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-user-plus"></i> Créer mon compte
+          </button>
+
+                    <p style="text-align: center; margin-top: 1rem;">
+                        Déjà un compte ? <a href="Login.html">Se connecter</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- ... (même footer que index.html) ... -->
+    </footer>
+
+    <!-- Chatbot -->
+    <!-- ... (même chatbot que index.html) ... -->
+
+    <script src="Scripts.js"></script>
+    <script src="Chatbot.js"></script>
+</body>
+
+</html>

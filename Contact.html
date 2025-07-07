@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MarketPlace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-store"></i> MarketPlace
+            </a>
+
+            <div class="nav-container">
+                <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+
+                <div class="nav-icons">
+                    <a href="account.html" class="nav-icon">
+                        <i class="fas fa-user"></i>
+                        <span>Compte</span>
+                    </a>
+                    <a href="help-center.html" class="nav-icon">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Aide</span>
+                    </a>
+                    <button id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="page-container">
+            <h1 class="page-title">Contactez-nous</h1>
+
+            <div class="grid-2">
+                <div class="content-card">
+                    <h2>Informations de contact</h2>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Adresse</h3>
+                                <p>123 Avenue du Commerce, Kinshasa, RDC</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3>Téléphone</h3>
+                                <p>+243 00 000 0000</p>
+                                <p>Lundi-Vendredi, 9h-18h</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>support@marketplace.com</p>
+                                <p>ventes@marketplace.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div>
+                                <h3>Support client</h3>
+                                <p>Assistance 24/7</p>
+                                <p>chat en direct disponible</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h2>Envoyez-nous un message</h2>
+
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Nom complet</label>
+                            <input type="text" id="contact-name" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Sujet</label>
+                            <input type="text" id="contact-subject" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" class="form-control" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Envoyer le message
+            </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- ... (même footer que index.html) ... -->
+    </footer>
+
+    <!-- Chatbot -->
+    <!-- ... (même chatbot que index.html) ... -->
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+
+</html>

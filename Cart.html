@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - MarketPlace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="Index.html" class="logo">
+                <i class="fas fa-store"></i> MarketPlace
+            </a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher des produits...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="nav-container">
+                <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+
+                <div class="nav-icons">
+                    <a href="Account.html" class="nav-icon">
+                        <i class="fas fa-user"></i>
+                        <span>Compte</span>
+                    </a>
+                    <a href="favorites.html" class="nav-icon">
+                        <i class="fas fa-heart"></i>
+                        <span>Favoris</span>
+                        <span class="badge fav-count">3</span>
+                    </a>
+                    <a href="Cart.html" class="nav-icon active">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Panier</span>
+                        <span class="badge cart-count">5</span>
+                    </a>
+                    <button id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="page-container">
+            <h1 class="page-title">Mon Panier</h1>
+
+            <div class="cart-container">
+                <!-- Les articles du panier seront chargés ici par JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Aide</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">CGU</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 MarketPlace. Tous droits réservés.
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <!-- ... (même chatbot que index.html) ... -->
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+
+</html>

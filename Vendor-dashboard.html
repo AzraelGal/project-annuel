@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord Vendeur - MarketPlace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="Index.html" class="logo">
+                <i class="fas fa-store"></i> MarketPlace
+            </a>
+            <div class="nav-container">
+                <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+                <div class="nav-icons">
+                    <a href="Vendor-dashboard.html" class="nav-icon active">
+                        <i class="fas fa-store"></i>
+                        <span>Vendeur</span>
+                    </a>
+                    <a href="Add-product.html" class="nav-icon">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Ajouter</span>
+                    </a>
+                    <button id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="page-container">
+            <h1 class="page-title">Tableau de bord Vendeur</h1>
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <div class="stat-value">1,250€</div>
+                    <div class="stat-label">Chiffre d'affaires</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">24</div>
+                    <div class="stat-label">Commandes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">Produits</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">4.8/5</div>
+                    <div class="stat-label">Évaluation</div>
+                </div>
+            </div>
+            <div class="content-card">
+                <h2>Dernières commandes</h2>
+                <table class="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>Commande</th>
+                            <th>Date</th>
+                            <th>Client</th>
+                            <th>Montant</th>
+                            <th>Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#ORD-001</td>
+                            <td>01/06/2023</td>
+                            <td>Jean Dupont</td>
+                            <td>49,99€</td>
+                            <td><span class="status delivered">Livré</span></td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-002</td>
+                            <td>02/06/2023</td>
+                            <td>Marie Lambert</td>
+                            <td>89,99€</td>
+                            <td><span class="status pending">Expédié</span></td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-003</td>
+                            <td>03/06/2023</td>
+                            <td>Paul Martin</td>
+                            <td>29,99€</td>
+                            <td><span class="status pending">En traitement</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="content-card">
+                <h2>Produits avec stock faible</h2>
+                <table class="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>Produit</th>
+                            <th>Stock</th>
+                            <th>Statut</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>T-shirt vintage</td>
+                            <td>3</td>
+                            <td><span class="status canceled">Faible</span></td>
+                            <td><button class="btn btn-primary">Réapprovisionner</button></td>
+                        </tr>
+                        <tr>
+                            <td>Casque audio sans fil</td>
+                            <td>5</td>
+                            <td><span class="status canceled">Faible</span></td>
+                            <td><button class="btn btn-primary">Réapprovisionner</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Aide</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">CGU</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 MarketPlace. Tous droits réservés.
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <!-- ... (même chatbot que index.html) ... -->
+
+    <script src="Scripts.js"></script>
+    <script src="Chatbot.js"></script>
+</body>
+
+</html>

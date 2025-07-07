@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Compte - MarketPlace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="Index.html" class="logo">
+                <i class="fas fa-store"></i> MarketPlace
+            </a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher des produits...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="nav-container">
+                <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+
+                <div class="nav-icons">
+                    <a href="Account.html" class="nav-icon active">
+                        <i class="fas fa-user"></i>
+                        <span>Compte</span>
+                    </a>
+                    <a href="favorites.html" class="nav-icon">
+                        <i class="fas fa-heart"></i>
+                        <span>Favoris</span>
+                        <span class="badge fav-count">3</span>
+                    </a>
+                    <a href="Cart.html" class="nav-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Panier</span>
+                        <span class="badge cart-count">5</span>
+                    </a>
+                    <button id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="page-container">
+            <h1 class="page-title">Mon Compte</h1>
+
+            <div class="account-container">
+                <!-- Sidebar -->
+                <div class="account-sidebar">
+                    <h3>Mon Compte</h3>
+                    <ul class="account-menu">
+                        <li><a href="Account.html" class="active"><i class="fas fa-user"></i> Profil</a></li>
+                        <li><a href="settings.html"><i class="fas fa-cog"></i> Paramètres</a></li>
+                        <li><a href="orders.html"><i class="fas fa-shopping-bag"></i> Mes Commandes</a></li>
+                        <li><a href="favorites.html"><i class="fas fa-heart"></i> Favoris</a></li>
+                        <li><a href="addresses.html"><i class="fas fa-map-marker-alt"></i> Adresses</a></li>
+                        <li><a href="payment-methods.html"><i class="fas fa-credit-card"></i> Paiements</a></li>
+                        <li><a href="Vendor-dashboard.html"><i class="fas fa-store"></i> Vendre sur MarketPlace</a></li>
+                        <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contenu -->
+                <div class="account-content">
+                    <div class="content-card">
+                        <div class="account-header">
+                            <img src="IMG-20250522-WA0146.jpg=rb-4.0.3&auto=format&fit=corp&w=200&q=80" alt="Avatar" class="account-avatar">
+                            <div class="account-info">
+                                <h2>GALENGA MAKONGO HUGO</h2>
+                                <p>Membre depuis janvier 2024</p>
+                                <p>KINGGALENGAA@email.com</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-2">
+                            <div>
+                                <h3>Informations personnelles</h3>
+                                <div class="form-group">
+                                    <label>Nom complet</label>
+                                    <p>GALENGA MAKONGO HUGO</p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <p>KINGGALENGAA@email.com</p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Téléphone</label>
+                                    <p>+243 895871891</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3>Dernières commandes</h3>
+                                <div class="order-item">
+                                    <div class="order-header">
+                                        <span>Commande #12345</span>
+                                        <span class="status delivered">Livrée</span>
+                                    </div>
+                                    <p>2 articles • 49,99$</p>
+                                    <p>Date: 15 juin 2024</p>
+                                </div>
+
+                                <div class="order-item">
+                                    <div class="order-header">
+                                        <span>Commande #12346</span>
+                                        <span class="status pending">En cours</span>
+                                    </div>
+                                    <p>1 article • 89,99$</p>
+                                    <p>Date: 18 juin 2024</p>
+                                </div>
+
+                                <a href="orders.html" class="btn">Voir toutes les commandes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- ... (même footer que index.html) ... -->
+    </footer>
+
+    <!-- Chatbot -->
+    <!-- ... (même chatbot que index.html) ... -->
+
+    <script src="Scripts.js"></script>
+    <script src="Chatbot.js"></script>
+</body>
+
+</html>

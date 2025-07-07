@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un produit - MarketPlace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="Index.html" class="logo">
+                <i class="fas fa-store"></i> MarketPlace
+            </a>
+
+            <div class="nav-container">
+                <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+
+                <div class="nav-icons">
+                    <a href="Account.html" class="nav-icon">
+                        <i class="fas fa-user"></i>
+                        <span>Compte</span>
+                    </a>
+                    <a href="Vendor-dashboard.html" class="nav-icon active">
+                        <i class="fas fa-store"></i>
+                        <span>Vendeur</span>
+                    </a>
+                    <button id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="page-container">
+            <h1 class="page-title">Ajouter un produit</h1>
+
+            <div class="content-card">
+                <form id="add-product-form">
+                    <div class="grid-2">
+                        <div>
+                            <div class="form-group">
+                                <label for="product-name">Nom du produit</label>
+                                <input type="text" id="product-name" class="form-control" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-description">Description</label>
+                                <textarea id="product-description" class="form-control" rows="5" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-price">Prix (€)</label>
+                                <input type="number" id="product-price" class="form-control" step="0.01" min="0" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-category">Catégorie</label>
+                                <select id="product-category" class="form-control" required>
+                  <option value="">Sélectionnez une catégorie</option>
+                  <option value="mode">Mode & Accessoires</option>
+                  <option value="electronique">Électronique</option>
+                  <option value="maison">Maison & Jardin</option>
+                  <option value="occasion">Occasions</option>
+                  <option value="beaute">Beauté & Santé</option>
+                  <option value="sport">Sports & Loisirs</option>
+                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="form-group">
+                                <label for="product-stock">Stock disponible</label>
+                                <input type="number" id="product-stock" class="form-control" min="0" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Images du produit</label>
+                                <div class="image-upload">
+                                    <input type="file" id="product-images" accept="image/*" multiple>
+                                    <label for="product-images" class="upload-label">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <span>Glissez-déposez vos images ou <strong>parcourir</strong></span>
+                  </label>
+                                    <div id="image-preview" class="preview-container"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-shipping">Options de livraison</label>
+                                <div class="shipping-options">
+                                    <label class="option">
+                    <input type="checkbox" name="shipping" value="standard">
+                    Livraison standard
+                  </label>
+                                    <label class="option">
+                    <input type="checkbox" name="shipping" value="express">
+                    Livraison express
+                  </label>
+                                    <label class="option">
+                    <input type="checkbox" name="shipping" value="pickup">
+                    Retrait en magasin
+                  </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-plus-circle"></i> Ajouter le produit
+          </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- ... (même footer que index.html) ... -->
+    </footer>
+
+    <!-- Chatbot -->
+    <!-- ... (même chatbot que index.html) ... -->
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+    <script>
+        // Gestion de l'upload d'images
+        document.getElementById('product-images').addEventListener('change', function(e) {
+            const preview = document.getElementById('image-preview');
+            preview.innerHTML = '';
+
+            if (this.files) {
+                [...this.files].forEach(file => {
+                    const reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.classList.add('preview-image');
+                        preview.appendChild(img);
+                    }
+
+                    reader.readAsDataURL(file);
+                });
+            }
+        });
+
+        // Soumission du formulaire
+        document.getElementById('add-product-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Produit ajouté avec succès !');
+            this.reset();
+            document.getElementById('image-preview').innerHTML = '';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom du Produit - MarketPlace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="Index.html" class="logo">
+                <i class="fas fa-store"></i> MarketPlace
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher des produits...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-container">
+                <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+                <div class="nav-icons">
+                    <a href="Account.html" class="nav-icon">
+                        <i class="fas fa-user"></i>
+                        <span>Compte</span>
+                    </a>
+                    <a href="favorites.html" class="nav-icon">
+                        <i class="fas fa-heart"></i>
+                        <span>Favoris</span>
+                        <span class="badge fav-count">3</span>
+                    </a>
+                    <a href="Cart.html" class="nav-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Panier</span>
+                        <span class="badge cart-count">5</span>
+                    </a>
+                    <button id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="page-container">
+            <div class="product-page">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://via.placeholder.com/600" alt="Produit" id="main-product-image">
+                    </div>
+                    <div class="thumbnails">
+                        <!-- Les miniatures seront générées par JavaScript -->
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1 id="product-title">Nom du Produit</h1>
+                    <div class="product-rating" id="product-rating">
+                        <!-- Les étoiles seront générées par JavaScript -->
+                    </div>
+                    <div class="product-price" id="product-price">49,99€</div>
+                    <div class="product-seller">
+                        Vendu par <span id="product-seller">Nom du Vendeur</span>
+                    </div>
+                    <div class="product-description">
+                        <p id="product-description">Description du produit...</p>
+                    </div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label for="product-size">Taille</label>
+                            <select id="product-size" class="option-select">
+                <option value="S">Petit (S)</option>
+                <option value="M" selected>Moyen (M)</option>
+                <option value="L">Large (L)</option>
+                <option value="XL">Très large (XL)</option>
+              </select>
+                        </div>
+                        <div class="option-group">
+                            <label for="product-color">Couleur</label>
+                            <select id="product-color" class="option-select">
+                <option value="noir">Noir</option>
+                <option value="blanc">Blanc</option>
+                <option value="rouge">Rouge</option>
+                <option value="bleu">Bleu</option>
+              </select>
+                        </div>
+                        <div class="option-group">
+                            <label for="quantity">Quantité</label>
+                            <div class="quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-primary" id="add-to-cart">
+              <i class="fas fa-shopping-cart"></i> Ajouter au panier
+            </button>
+                        <button class="btn" id="toggle-favorite">
+              <i class="far fa-heart"></i>
+            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- ... (même footer que index.html) ... -->
+    </footer>
+
+    <!-- Chatbot -->
+    <!-- ... (même chatbot que index.html) ... -->
+
+    <script src="Scripts.js"></script>
+    <script src="Chatbot.js"></script>
+</body>
+
+</html>
